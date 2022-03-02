@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.form-out{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 100px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.form-in{
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 48px 48px 48px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    text-align: left;
+}
+.form-in h1{
+    font-weight: 700;
+    font-size: 29px;
+    margin-top: 0;
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
+.fullname .input input{
+    width: 49.5%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.fullname .input #lastname{
+    float: right;
+}
+.phone input{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.address-line textarea{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+    resize: none;
+}
+.address-tabs input{
+    width: 49.5%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+#state, #pincode{
+    float: right;
+}
+.parcel-type .input select{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.parcel-type .input select:hover{
+    cursor: pointer;
+}
+.parcel-details input{
+    width: 32%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.parcel-details input#length{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.parcel-details input#breadth{
+    float: right;
+}
+.parcel-picture .label label{
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 0 5px;
+    display: inline-block;
+}
+.parcel-picture input{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.btn{
+    display: block;
+}
+.btn .cancel{
+    background-color: rgb(209, 209, 209);
+    color: rgb(54, 54, 54);
+    border-radius: 10px;
+    width: 48%;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    border: none;
+    display: inline-block;
+}
+.btn .cancel:hover{
+    background-color: rgb(190, 190, 190);
+    font-weight: bold;
+}
+.btn .submit{
+    color: white;
+    background-color: rgb(255, 102, 0);
+    width: 48%;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    float: right;
+}
+.btn .submit:hover{
+    background-color: rgb(255, 60, 0);
+    font-weight: bold;
+}
+@media (max-width: 800px){
+    .form-in h1{
+        font-weight: 700;
+        font-size: 24px;
+        margin-top: 0;
+    }
+    .form-out{
+        position: inherit;
+        left: 0;
+        transform: none;
+        width: 100%;
+        margin-top: 0;
+    }
+    .form-in{
+        border: none;
+    }
+}
+

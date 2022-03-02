@@ -1,0 +1,44 @@
+<div class="payments-out">
+    <div class="payments-in">
+        <div>
+            <h1>Payment</h1>
+        </div>
+        <div>
+            <div class="methods">
+                <fieldset  required>
+                    <legend><h3>Select Payment Method</h3></legend>
+                    <div>
+                        <label for="methods">Credit/Debit Card</label>
+                        <input type="radio" name="methods" id="methods">
+                    </div>
+                    <div>
+                        <label for="methods">UPI</label>
+                        <input type="radio" name="methods" id="methods">
+                    </div>
+                    <div>
+                        <label for="methods">Cash Payment</label>
+                        <input type="radio" name="methods" id="methods">
+                    </div>
+                </fieldset>
+            </div>
+            <div class="bill">
+                <div class="bill-details">
+                    <h3>Bill Details</h3>
+                    <div>
+                        <div>Order Total <span style="float: right;"> Rs. 350</span></div>
+                        <div>Discount <span style="float: right;"> -Rs. 50</span></div>
+                    </div>
+                </div>
+                <div class="to-pay">
+                    <h4>To Pay <span style="float: right;"> Rs. 300</span></h4>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="reset" class="cancel">Cancel</button>
+                <button type="submit" class="submit" (click)="orderConfirmed()">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.signup-out{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    width: 478px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+.signup-in{
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 16px 48px 16px 48px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    text-align: left;
+    margin-top: 28px;
+}
+.signup-in h1{
+    font-weight: 700;
+    font-size: 29px;
+    margin-top: 0;
+}
+form{
+    display: block;
+    margin-top: 0em;
+}
+.fullname .label label{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 25px 0 5px;
+    display: inline-block;
+}
+.fullname .input input{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+}
+.email .label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.email .label label{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 25px 0 5px;
+    display: inline-block;
+}
+.email .label span{
+    font-size: 14px;
+}
+.email .label span span{
+    color: rgb(255, 102, 0);
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.email .input{
+    position: relative;
+}
+.email .input input{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+}
+.phone .label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.phone .label label{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 25px 0 5px;
+    display: inline-block;
+}
+.phone .input{
+    position: relative;
+}
+.phone .input input{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.password{
+    display: flex;
+    flex-direction: column;
+}
+.password .label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.password .label label{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 25px 0 5px;
+    display: inline-block;
+}
+.password .input{
+    position: relative;
+}
+.password .input input{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.signup-btn{
+    display: block;
+}
+.signup-btn button{
+    color: white;
+    background-color: rgb(255, 102, 0);
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    display: inline-block;
+}
+.signup-btn button:hover{
+    background-color: rgb(255, 60, 0);
+}
+@media (min-width:801px) and (max-width: 1080px){
+    .signup-in{
+        margin-top: 56px;
+    }
+}
+@media (max-width: 800px){
+    .signup-out{
+        left: 0;
+        transform: none;
+        position: relative;
+        width: 100%;
+    }
+    .signup-in{
+        border: none;
+        margin-top: 0;
+    }
+}
+@media (max-width: 450px){
+    .email .label span{
+        font-size: 12px;
+        margin-bottom: 3px;
+    }
+}
+

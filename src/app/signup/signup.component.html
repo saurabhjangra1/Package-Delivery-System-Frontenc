@@ -1,0 +1,51 @@
+<div class="signup-out">
+    <div class="signup-in">
+        <div>
+            <h1>Sign up</h1>
+        </div>
+        <div>
+            <form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+                <div class="fullname">
+                    <div class="label">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" name="name" id="name" formControlName="fullname" placeholder="Enter Full Name">
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="label">
+                        <label for="email">Email</label>
+                        <span>Have an account? 
+                            <span (click)="redirectLogin()">Log in</span>
+                        </span>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" formControlName="email" placeholder="abc@email.com">
+                    </div>
+                </div>
+                <div class="phone">
+                    <div class="label">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="input">
+                        <input type="number" id="phone" formControlName="mobile" placeholder="+91 8320******">
+                    </div>
+                </div>
+                <div class="password">
+                    <div class="label">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" formControlName="password" placeholder="Create a new Password">
+                    </div>
+                </div>
+                <div class="signup-btn">
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

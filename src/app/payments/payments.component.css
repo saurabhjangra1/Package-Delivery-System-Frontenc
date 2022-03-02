@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.payments-out{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: block;
+    width: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+.payments-in{
+    position: relative;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 48px 48px 48px;
+    background-color: #fff;
+    border: 1px solid #e3e3e3;
+    border-radius: 16px;
+    text-align: left;
+}
+.payments-in h1{
+    font-weight: 700;
+    font-size: 29px;
+    margin-top: 0;
+}
+.methods fieldset{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 12px;
+}
+.methods fieldset div{
+    margin-right: 20px;
+}
+.bill{
+    width: 100%;
+    padding: 14px;
+    font-size: 14px;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.btn{
+    display: block;
+}
+.btn .cancel{
+    background-color: rgb(209, 209, 209);
+    color: rgb(54, 54, 54);
+    border-radius: 10px;
+    width: 48%;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    border: none;
+    display: inline-block;
+}
+.btn .cancel:hover{
+    background-color: rgb(190, 190, 190);
+    font-weight: bold;
+}
+.btn .submit{
+    color: white;
+    background-color: rgb(255, 102, 0);
+    width: 48%;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    float: right;
+}
+.btn .submit:hover{
+    background-color: rgb(255, 60, 0);
+    font-weight: bold;
+}
+@media (max-width: 800px){
+    .payments-out{
+        left: 0;
+        transform: none;
+        width: 100%;
+        position: relative;
+    }
+    .payments-in{
+        border: none;
+        margin-top: 0;
+    }
+}
+@media (max-width: 450px){
+    .methods fieldset{
+        display: flex;
+        flex-direction: column;
+    }
+    .methods fieldset div{
+        margin-bottom: 8px;
+    }
+    .payments-in h1{
+        font-weight: 600;
+        font-size: 24px;
+    }
+}
+@media (max-width: 350px){
+    .payments-in h1{
+        font-size: 18px;
+    }
+}
+

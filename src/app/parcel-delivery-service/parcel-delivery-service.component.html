@@ -1,0 +1,100 @@
+<div class="form-out">
+    <div class="form-in">
+        <div>
+            <h1>Book a Delivery</h1>
+        </div>
+        <div>
+            <form>
+                <div class="pickup">
+                    <h3>Pick Up</h3>
+                    <div class="fullname">
+                        <div class="input">
+                            <input type="text" name="name" id="firstname" placeholder="First Name">
+                            <input type="text" name="name" id="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="phone">
+                        <div class="input">
+                            <input type="number" name="phone" id="phone" placeholder="Mobile Number">
+                            <input type="number" name="phone" id="alt-phone" placeholder="Alternate Number">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="address">
+                        <div class="address-line">
+                            <textarea name="address" id="address" cols="110" rows="5" placeholder="Delivery Address" notresizeable></textarea>
+                        </div>
+                        <div class="address-tabs">
+                            <input type="text" id="country" placeholder="Country">
+                            <input type="tel" name="state" id="state" placeholder="State">
+                            <input type="text" name="city" id="city" placeholder="City">
+                            <input type="number" name="pincode" id="pincode" placeholder="PINCODE">
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery">
+                    <h3>Delivery</h3>
+                    <div class="fullname">
+                        <div class="input">
+                            <input type="text" name="name" id="firstname" placeholder="First Name">
+                            <input type="text" name="name" id="lastname" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="phone">
+                        <div class="input">
+                            <input type="number" name="phone" id="phone" placeholder="Mobile Number">
+                            <input type="number" name="phone" id="alt-phone" placeholder="Alternate Number">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="address">
+                        <div class="address-line">
+                            <textarea name="address" id="address" cols="110" rows="5" placeholder="Delivery Address"></textarea>
+                        </div>
+                        <div class="address-tabs">
+                            <input type="text" id="country" placeholder="Country">
+                            <input type="tel" name="state" id="state" placeholder="State">
+                            <input type="text" name="city" id="city" placeholder="City">
+                            <input type="number" name="pincode" id="pincode" placeholder="PINCODE">
+                        </div>
+                    </div>
+                </div>
+                <div class="parcel">
+                    <h3>Parcel Details</h3>
+                    <div class="parcel-type">
+                        <div class="input">
+                            <select name="parcel-type" id="parcel-type">
+                                <option value="">--Select Parcel Type</option>
+                                <option value="Type-A">Type A</option>
+                                <option value="Type-B">Type B</option>
+                                <option value="Type-C">Type C</option>
+                                <option value="Type-D">Type D</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="parcel-details">
+                        <div class="input">
+                            <input type="number" name="weight" id="weight" placeholder="Weight in grams" title="Weight in grams">
+                            <input type="number" name="length" id="length" placeholder="Length in metres" title="Length in metres">
+                            <input type="number" name="breadth" id="breadth" placeholder="Breadth in metres" title="Breadth in metres">
+                        </div>
+                    </div>
+                    <div class="parcel-picture">
+                        <div class="label">
+                            <label for="picture">Parcel Picture</label>
+                        </div>
+                        <div class="input">
+                            <input type="file" name="picture" id="picture">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="reset" class="cancel">Reset</button>
+                    <button type="submit" class="submit" (click)="redirectPayments()">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
